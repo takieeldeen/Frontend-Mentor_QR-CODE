@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html{
+      font-family: "Outfit",sans-serif;
+      font-size: 15px;
+      background-color: #D5E1EF;
+    }
+
+    body{
+      position: relative;
+    }
+
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+
+    }
+    
+    .post{
+      background-color: #fff;
+      width: 18rem;
+      overflow: hidden;
+      padding: 1rem;
+      border-radius: 1rem;
+      text-align: center;
+      box-shadow: 0 1.5rem 3rem rgba(0,0,0,0.1);
+    }
+
+
+    
+
+    .post_img{
+      width: 100%;
+      border-radius: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    .post_heading{
+      font-size: 1.2rem;
+      margin-bottom: .7rem;
+      width: 95%;
+      color: hsl(218, 44%, 22%);
+      font-weight: 700;
+    }
+
+    .post_text{
+      color: hsl(220, 15%, 55%);
+      font-size: 0.9rem;
+      width: 95%;
+      padding-bottom: 1rem;
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center;
+      position: absolute;
+      bottom: 0;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media (max-width: 375px){
+      .post{
+        width: 20rem;
+      }
+
+      .post_heading{
+        font-size: 1.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="post">
+      <img src="images/image-qr-code.png" alt="QR code image" class="post_img">
+      <h2 class="post_heading">
+        Improve your front-end skills by building projects
+
+      </h2>
+      <p class="post_text">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </p>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Takie Eldeen</a>.
+    </div>
+  </div>
+  
+</body>
+</html>
